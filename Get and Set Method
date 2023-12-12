@@ -1,0 +1,59 @@
+public class StudentTester {
+    private int studentID;
+    private String name;
+    private float qualifyingExamMarks;
+    private char residentialStatus;
+    private int yearofEngg;
+
+    public int getStudentID(){
+        return studentID;
+    }
+    public void setStudentID(int newStudentID){
+        this.studentID = newStudentID;
+    }
+
+    public String getName(){
+        return name;
+    }
+    public void setName(String newName){
+        this.name = newName;
+    }
+
+    public float getQualifyingExamMarks(){
+        return qualifyingExamMarks;
+    }
+    public void setQualifyingExamMarks(float newQualifyinExamMarks){
+        this.qualifyingExamMarks = newQualifyinExamMarks;
+    }
+
+    public char getResidentialStatus(){
+        return residentialStatus;
+    }
+    public void setResidentialStatus(char newResidentialStatus){
+        this.residentialStatus = newResidentialStatus;
+    }
+
+    public int getYearofEngg(){
+        return yearofEngg;
+    }
+    public void setYearofEngg(int newYearofEngg){
+        this.yearofEngg = newYearofEngg;
+    }
+
+    public static void main(String[] args) {
+        StudentTester studentTester = new StudentTester();
+
+            studentTester.setStudentID(123456);
+            studentTester.setName("Shubh");
+            studentTester.setQualifyingExamMarks(85.5f);
+            studentTester.setResidentialStatus('R');
+            studentTester.setYearofEngg(2023);
+
+            System.out.println("Student ID: " + studentTester.getStudentID());
+            System.out.println("Name: " + studentTester.getName());
+            System.out.println("Qualifying Exam Marks: " + studentTester.getQualifyingExamMarks());
+            System.out.println("Residential Status: " + studentTester.getResidentialStatus());
+            System.out.println("Year of Engineering: " + studentTester.getYearofEngg());
+       
+    }
+}
