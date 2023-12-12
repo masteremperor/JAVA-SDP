@@ -1,0 +1,26 @@
+public class SubjectMarks {
+    private int[] marksArray = new int[5];
+
+    public void storeMarks(int[] marks) {
+        if (marks.length == marksArray.length) {
+            System.arraycopy(marks, 0, marksArray, 0, marks.length);
+            System.out.println("Marks stored.");
+        } else {
+            System.out.println("Please provide marks for 5 subjects.");
+        }
+    }
+
+    public void displayMarks() {
+        System.out.println("Subject Marks:");
+        for (int mark : marksArray) {
+            System.out.println(mark);
+        }
+    }
+
+    public static void main(String[] args) {
+        SubjectMarks subjectMarks = new SubjectMarks();
+        int[] studentMarks = {85, 70, 92, 78, 88};
+        subjectMarks.storeMarks(studentMarks);
+        subjectMarks.displayMarks();
+    }
+}
