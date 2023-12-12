@@ -1,0 +1,12 @@
+public class Account{
+    private double balance = 500.00;
+    public double getBalance(int AccountID){
+        return balance;
+    }
+    
+    public static void main(String[]args){
+        Account acc = new Account();
+        double value = acc.getBalance(123456);
+        System.out.println("Your account balance is: "+value);
+    }
+}
