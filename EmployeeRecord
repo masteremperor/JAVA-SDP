@@ -1,0 +1,25 @@
+public class EmployeeRecord {
+    public static void main(String[] args) {
+        double[] salaries = {23500.0, 25080.0, 28760.0, 22340.0, 19890.0};
+
+        double totalSalary = 0;
+        for (double salary : salaries) {
+            totalSalary += salary;
+        }
+        double averageSalary = totalSalary / salaries.length;
+
+        int aboveAverageCount = 0;
+        int belowAverageCount = 0;
+        for (double salary : salaries) {
+            if (salary > averageSalary) {
+                aboveAverageCount++;
+            } else if (salary < averageSalary) {
+                belowAverageCount++;
+            }
+        }
+
+        System.out.println("Average Salary: " + averageSalary);
+        System.out.println("Number of employees with salary greater than average: " + aboveAverageCount);
+        System.out.println("Number of employees with salary lesser than average: " + belowAverageCount);
+    }
+}
